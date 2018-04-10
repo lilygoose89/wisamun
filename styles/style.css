@@ -1,0 +1,33 @@
+/* universal styles ----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #fefefe;
+}
+
+/* layout ----------------------------------------- */
+
+/* typography ----------------------------------------- */
+h1 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+p,li {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* header and nav styles ----------------------------------------- */
+
+/* footer styles ----------------------------------------- */
+
+/* homepage styles ----------------------------------------- */
+
+/* masonry layout ----------------------------------------- */
+
+/* about styles ----------------------------------------- */
+
+/* news styles ----------------------------------------- */

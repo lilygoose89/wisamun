@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<!-- dumped form cnx web's blog listing page for use with jekyll-archives -->
+<section class="mobile-section-top">
+  <h1 class="text-bg-black pad-bottom-xs"><span>Posts filed under <span class="capitalize">'{{ page.title }}'</span>:</span></h1>
+  {% for post in page.posts %}
+  <div class="outline-turq margin-top-xs margin-bottom-xs pad-all-xs">
+    <h3>{{post.title}}</h3>
+    <h6 class="pad-top-xs">{{ post.date | date: "%b %-d, %Y" }}</h6>
+    <p>{{post.excerpt}}</p>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="col-2_sm-12 text-right"><button class="button">Read More</button></a>
+  </div>
+  {% endfor %}
+  <span class="hor-line"></span>
+  <a href="/blog"><button>Go back to main blog page</button></a>
+</section>
