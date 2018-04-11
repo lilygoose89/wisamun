@@ -1,5 +1,5 @@
 ---
-title: about the artist
+title: Privacy Policy
 description:
 layout: default
 ---

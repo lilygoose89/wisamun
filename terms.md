@@ -1,5 +1,5 @@
 ---
-title: about the artist
+title: Terms & Conditions
 description:
 layout: default
 ---

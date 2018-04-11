@@ -1,5 +1,5 @@
 ---
-title: about the artist
+title: Frequently Asked Questions
 description:
 layout: default
 ---

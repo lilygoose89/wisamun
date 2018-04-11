@@ -1,57 +1,68 @@
 ---
-title:
+title: Wisamun Sitthiket Photography
 description:
-layout: default
+layout: home
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-  <title>{{page.title}}</title>
-  <meta name="description" content="{{page.description}}"/>
-  <meta name="keywords" content="{{page.keywords}}"/>
-  <meta name="author" content="{{page.author}}">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-  <header>
-    <h1>Wisamun<br />Sitthiket</h1>
-    <nav>
-      <ul>
-        <a><li>About</li></a>
-        <a><li>News</li></a>
-        <li class="text-red"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li></a>
-        <a><li><i class="fa fa-facebook-square" aria-hidden="true"></i></li></a>
-        <a><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
-      </ul>
-    </nav>
-  </header>
-  <div class="side-nav">
-    <h2>Collections</h2>
-    <nav>
-      <ul>
-        <a><li>black & white</li></a>
-        <a><li>mask</li></a>
-        <a><li>street photography</li></a>
-      </ul>
-    </nav>
-  </div>
-  <section class="grid">
-    <div class="col-3">
+<!-- {% for posts in site.posts limit:5 offset:0 %}
+<div class="outline-turq margin-top-xs margin-bottom-xs pad-all-xs">
+  <h3>{{posts.title}}</h3>
+  <h6 class="pad-top-xs">{{ posts.date | date: "%b %-d, %Y" }}</h6>
+  <p>{{posts.excerpt}}</p>
+  <a href="{{posts.url}}" class="col-2_sm-12 text-right"><button class="button"><span class="editable"></span>Read More</button></a>
+</div>
+{% endfor %}
+<a href="/blog-all"><button><span class="editable">See list of all blog posts</span></button></a>
+<span class="hor-line margin-bottom-s"></span>
+<h2 class="text-bg-black pad-bottom-xs"><span class="editable">Explore Tags:</span></h2>
+  <div class="justify-content">
+  {% for tag in site.tags %}
+    {% assign tag_name = tag[0] %}
+    <a class="tags big-tags nudge-down" href="/archives/tag/{{ tag_name | slugify }}/">{{ tag_name | replace: "-", " " }}</a>
+  {% endfor %} -->
 
+  <section class="grid masonry">
+    <div class="col-3">
+      <a>
+        <div class="masonry-container">
+          <img src="/images/img2.jpg" alt=""/>
+        </div>
+        <div class="masonry-container">
+          <img src="/images/img3.jpg" alt=""/>
+        </div>
+        <div class="masonry-container">
+          <img src="/images/img4.jpg" alt=""/>
+        </div>
+        <div class="masonry-container">
+          <img src="/images/img5.jpg" alt=""/>
+        </div>
+      </a>
     </div>
     <div class="col-3">
-
+      <div class="masonry-container">
+        <img src="/images/img4.jpg" alt=""/>
+      </div>
+      <div class="masonry-container">
+        <img src="/images/img5.jpg" alt=""/>
+      </div>
+      <div class="masonry-container">
+        <img src="/images/img6.jpg" alt=""/>
+      </div>
+      <div class="masonry-container">
+        <img src="/images/img7.jpg" alt=""/>
+      </div>
     </div>
     <div class="col-3">
-
+      <div class="masonry-container">
+        <img src="/images/img5.jpg" alt=""/>
+      </div>
+      <div class="masonry-container">
+        <img src="/images/img6.jpg" alt=""/>
+      </div>
+      <div class="masonry-container">
+        <img src="/images/img7.jpg" alt=""/>
+      </div>
+      <div class="masonry-container">
+        <img src="/images/img8.jpg" alt=""/>
+      </div>
     </div>
   </section>
-</body>
