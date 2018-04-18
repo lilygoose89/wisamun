@@ -84,10 +84,33 @@ a {
 	color: #000;
   border: 1px solid #000;
 }
+.button-small {
+  font-family: 'Alegreya Sans SC', sans-serif;
+	border: 1px solid transparent;
+	cursor:pointer;
+	background-color: #000;
+	color:white;
+	font-size: 1.5em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:300;
+}
+.button-small:hover{
+	background-color: #fff;
+	color: #000;
+  border: 1px solid #000;
+}
 
 /* container styles ----------------------------------------- */
 .bg-dark {
   background-color: #515352;
+}
+.bg-black {
+  background-color: black;
 }
 .shadow {
   box-shadow: 0 12px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -102,7 +125,7 @@ a {
 }
 .side-nav-container {
   width: 260px;
-  padding-left: 2%;
+  padding-left: 3.5%;
 }
 .black-label {
   background-color: black;
@@ -127,8 +150,8 @@ a .black-label:hover {
 /* masonry layout ----------------------------------------- */
 .masonry {
   position: relative;
-  top: -20vh;
-  left: 20vw;
+  top: -21vh;
+  left: 21%;
   padding: 0;
 }
 .masonry-container {
@@ -146,6 +169,31 @@ a .black-label:hover {
 
 }
 /* about styles ----------------------------------------- */
+.about-section {
+  padding: 0 3.5%;
+}
+.vimeo {
+  width: 1000px;
+  height: 563px;
+}
+@media all and (max-width:1024px) {
+  .vimeo {
+    width: 800px;
+    height: 450px;
+  }
+}
+@media all and (max-width:768px) {
+  .vimeo {
+    width: 640px;
+    height: 360px;
+  }
+}
+@media all and (max-width:576px) {
+  .vimeo {
+    width: 390px;
+    height: 219px;
+  }
+}
 
 /* news styles ----------------------------------------- */
 
@@ -266,7 +314,7 @@ input:focus, textarea:focus {
 .pad-bottom-l {
   padding-bottom: 20%;
 }
-.pad-left-s {
+.pad-left-xs {
   padding-left: 1%;
 }
 .pad-left-s {
