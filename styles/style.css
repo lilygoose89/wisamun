@@ -198,9 +198,26 @@ a .black-label:hover {
 /* news styles ----------------------------------------- */
 
 /* contact styles ----------------------------------------- */
+.bg-contact {
+  background-image: url("/images/artistatwork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  overflow-y: hidden;
+}
+.bg-contact-overlay {
+  background-color: rgba(223,218,215,0.5);
+  position: absolute;
+  height: 89.4%;
+  width: 100%;
+  z-index: 3;
+}
 .contact-form-container {
   background-color: white;
   padding: 5%;
+  position: relative;
+  z-index: 4;
 }
 .feedback-input {
 	color:#000;
