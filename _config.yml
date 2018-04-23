@@ -1,11 +1,12 @@
 collections:
-  example:
+  posts:
     output: true
+    permalink: /:collection/:name
 
 gems:
   - jekyll-archives
   - jekyll-paginate
-  - jekyll-seo-tags
+  - jekyll-seo-tag
 
 jekyll-archives:
   enabled: 'all'

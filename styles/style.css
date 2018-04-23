@@ -130,7 +130,7 @@ header a:hover {
   transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 .side-nav-container {
-  width: 260px;
+  width: 20vw;
   padding-left: 3.5%;
 }
 .black-label {
@@ -141,6 +141,20 @@ header a:hover {
   margin: 2%;
 }
 a .black-label:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
+  -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.active-label {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 1.5%;
+  margin: 2%;
+}
+a .active-label:hover {
   box-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
   -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -153,8 +167,9 @@ footer a:hover {
 /* homepage styles ----------------------------------------- */
 
 .masonry {
+  width: 76vw;
   position: relative;
-  top: -21vh;
+  top: -19vh;
   left: 21%;
   padding: 0;
 }
@@ -169,9 +184,9 @@ footer a:hover {
   -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
 }
-.masonry-img {
-  /* max-width: 200px; */
-}
+/* .masonry-img {
+  width: auto;
+} */
 
 .button-hidden {
   font-size: 1.5em;

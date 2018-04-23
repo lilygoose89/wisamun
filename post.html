@@ -1,0 +1,32 @@
+---
+layout: home
+---
+{% for posts in site.posts limit:1 %}
+<div class="hero-image" style="background-image: url('{{posts.hero_image}}');)">
+  <h1 class="text-bg-black pad-top-xs pad-left-xs"><span>{{posts.title}}</span></h1>
+</div>
+<h4 class="pad-top-xs pad-bottom-xs">Published: {{posts.date | date: "%b %-d, %Y"}}</h4>
+<!-- container for blog post and author card and tags -->
+<div class="grid-spaceBetween-top">
+  <!-- container for blog post content - left column -->
+  <div class="col-9_sm-12 pad-left-m">
+    <p>
+      {{posts.content}}
+    </p>
+
+  </div>
+  <!-- container for author and tags - right column -->
+  <div class="col-2_sm-12 grid">
+    <div class="col-12_sm-0 margin-top-xs">
+      <img src="{{posts.author_image}}" alt="{{posts.author}} image" />
+      <h5>Author: {{posts.author}}</h5>
+    </div>
+    <div>
+      <h5>Filed Under:</h5>
+      {% for tag in posts.tags %}
+      <h5 class="tags nudge-down"><a href="/archives/tag/{{ tag | slugify }}">{{tag}}</a></h5>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{%endfor%}
