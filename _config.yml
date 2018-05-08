@@ -5,7 +5,6 @@ collections:
 
 gems:
   - jekyll-archives
-  - jekyll-paginate
   - jekyll-seo-tag
 
 jekyll-archives:

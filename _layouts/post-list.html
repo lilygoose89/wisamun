@@ -3,7 +3,6 @@ layout: home
 ---
 <section class="grid masonry">
   {% for post in page.posts %}
-  <!-- {% if post.tags contains 'woman' %} -->
   <div class="col-4">
     <div class="masonry-container text-center">
       <img src="{{post._image}}" alt="{{post.alt}}" class="masonry-img"/>
@@ -11,20 +10,5 @@ layout: home
         <a><button class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></a>
     </div>
   </div>
-  <!-- {% endif %} -->
   {% endfor %}
 </section>
-
-<!-- <section class="mobile-section-top">
-  <h1 class="text-bg-black pad-bottom-xs"><span>Posts filed under <span class="capitalize">'{{ page.title }}'</span>:</span></h1>
-  {% for post in page.posts %}
-  <div class="outline-turq margin-top-xs margin-bottom-xs pad-all-xs">
-    <h3>{{post.title}}</h3>
-    <h6 class="pad-top-xs">{{ post.date | date: "%b %-d, %Y" }}</h6>
-    <p>{{post.excerpt}}</p>
-    <a href="{{ post.url | prepend: site.baseurl }}" class="col-2_sm-12 text-right"><button class="button">Read More</button></a>
-  </div>
-  {% endfor %}
-  <span class="hor-line"></span>
-  <a href="/blog"><button>Go back to main blog page</button></a>
-</section> -->
