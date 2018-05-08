@@ -3,14 +3,18 @@ title: Wisamun Sitthiket Photography
 description:
 layout: home
 ---
-<section class="grid masonry">
-  {% for post in site.posts %}
-    <div class="col-4">
-      <div class="masonry-container text-center">
-        <img src="{{post._image}}" alt="{{post.alt}}" class="masonry-img"/>
-          <a><button class="button-hidden"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button></a>
-          <a><button class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></a>
+<section>
+  <div class="wrapper">
+    <div class="masonry-layout">
+      {% for post in site.posts %}
+      <div class="masonry-container">
+        <div class="masonry-content">
+          <img src="{{post._image}}" alt="{{post.alt}}" class=""/>
+            <a><button class="button-hidden"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button></a>
+            <a><button class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></a>
+        </div>
       </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
 </section>
