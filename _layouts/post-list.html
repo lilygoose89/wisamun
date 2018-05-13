@@ -1,26 +1,31 @@
 ---
 layout: home
 ---
-<!-- <section class="grid masonry">
-  {% for post in page.posts %}
-  <div class="col-4">
-    <div class="masonry-container text-center">
-      <img src="{{post._image}}" alt="{{post.alt}}" class="masonry-img"/>
-        <a><button class="button-hidden"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button></a>
-        <a><button class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></a>
-    </div>
-  </div>
-  {% endfor %}
-</section> -->
 <section>
   <div class="wrapper">
     <div class="masonry-layout">
       {% for post in page.posts %}
       <div class="masonry-container">
-        <div class="masonry-content">
-          <img src="{{post._image}}" alt="{{post.alt}}" class=""/>
-            <a><button class="button-hidden"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button></a>
-            <a><button class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></a>
+        <a href="{{post.url}}">
+          <div class="masonry-content">
+            <img src="{{post._image}}" alt="{{post.alt}}" class=""/>
+            <a id="{{post.photoid}}" class="click-full-screen"><i class="fa fa-eye button-hidden" aria-hidden="true"></i></a>
+            <a class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+          </div>
+        </a>
+      </div>
+      <!-- popup modal not shown by default -->
+      <div id="{{post.photoid}}Modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="{{post._image}}" alt="{{post.alt}}" class="full-screen-image"/>
+          <div class="grid-center">
+            <div class="col-6 grid-middle-center-spaceAround full-screen-info">
+              <p class="col-8 text-white">{{post.title}}</p>
+              <a href="{{post.url}}" class="col-2"><button class="button-tiny">Details</button></a>
+              <a href="" class="col-2"><button class="button-tiny">Add to Cart</button></a>
+            </div>
+          </div>
         </div>
       </div>
       {% endfor %}

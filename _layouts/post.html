@@ -11,8 +11,39 @@ tags:
   - tag number three
 keywords:
 published: true
-layout: default
+layout: home
 ---
 <section>
-  <h2>Hello world!</h2>
+  <div class="wrapper">
+    <div class="grid-spaceAround">
+      <div class="col-6 bg-white text-center shadow">
+        <a id="{{page.photoid}}" class="click-full-screen">
+          <img class="pad-top-xs" src="{{page._image}}" alt="{{page.alt}}"/>
+        </a>
+      </div>
+      <div class="col-5">
+        <h1>{{page.title}}</h1>
+        <p>{{page.description}}</p>
+        <!-- <p>Uploaded on {{page.date | date: "%b %-d, %Y"}}</p> -->
+        <p class="pad-top-xs">All limited edition prints are printed on blah-blah Xmm fine-art paper and hand-signed by the artist.</p>
+        <p class="pad-bottom-m">Prints come in two sizes, ____ x ____, or ____ x _____.</p>
+        <div class="margin-bottom-s">
+          <a><button class="button-main">Add to cart</button></a>
+        </div>
+        {% include share-module.html%}
+      </div>
+    </div>
+  </div>
 </section>
+<!-- popup modal not shown by default -->
+<div id="{{page.photoid}}Modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="{{page._image}}" alt="{{page.alt}}" class="full-screen-image"/>
+    <div class="grid-center">
+      <div class="col-6 grid-middle-center-spaceAround full-screen-info">
+        <p class="col-12 text-white">{{page.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>
