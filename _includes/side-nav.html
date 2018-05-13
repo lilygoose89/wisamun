@@ -5,5 +5,8 @@
       {% assign tag_name = tag[0] %}
       <a href="/archives/tag/{{ tag_name | slugify }}/"><p class="{% if page.url contains 'tag_name' %}active-label{% else %}black-label{% endif %}" >{{ tag_name }}</p></a>
     {% endfor %}
+    <div class="margin-top-m">
+      <a href="/">Display All Images</a>
+    </div>
   </nav>
 </div>
