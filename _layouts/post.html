@@ -16,12 +16,14 @@ layout: home
 <section>
   <div class="wrapper">
     <div class="grid-spaceAround">
-      <div class="col-6 bg-white text-center shadow">
-        <a id="{{page.photoid}}" class="click-full-screen">
-          <img class="pad-top-xs" src="{{page._image}}" alt="{{page.alt}}"/>
-        </a>
+      <div class="col-6_md-12">
+        <div class="bg-white text-center shadow">
+          <a id="{{page.photoid}}" class="click-full-screen">
+            <img class="pad-top-xs" src="{{page._image}}" alt="{{page.alt}}"/>
+          </a>
+        </div>
       </div>
-      <div class="col-5">
+      <div class="col-5_md-12 pad-bottom-m">
         <h1>{{page.title}}</h1>
         <p>{{page.description}}</p>
         <!-- <p>Uploaded on {{page.date | date: "%b %-d, %Y"}}</p> -->
