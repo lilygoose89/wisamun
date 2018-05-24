@@ -3,6 +3,9 @@ title: this is an example title
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 _image:
 alt:
+photo-id:
+price:
+weight:
 date:
 author:
 tags:
@@ -30,7 +33,13 @@ layout: home
         <p class="pad-top-xs">All limited edition prints are printed on blah-blah Xmm fine-art paper and hand-signed by the artist.</p>
         <p class="pad-bottom-m">Prints come in two sizes, ____ x ____, or ____ x _____.</p>
         <div class="margin-bottom-s">
-          <a><button class="button-main">Add to cart</button></a>
+          <a><button class="button-main snipcart-add-item"
+    data-item-id="{{page.photoid}}"
+    data-item-name="{{page.title}}"
+    data-item-price="{{page.price}}"
+    data-item-weight="{{page.weight}}"
+    data-item-url="{{page.url}}"
+    data-item-description="{{page.description}}">Add to cart</button></a>
         </div>
         {% include share-module.html%}
       </div>
