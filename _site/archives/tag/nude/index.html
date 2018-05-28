@@ -18,25 +18,39 @@
 </head>
 
 <body>
-  <header class="grid-spaceBetween margin-left-xs pad-left-xs">
-  <ul class="col-3_sm-6">
-    <li class="logo">
+  <header class="grid-middle-spaceBetween margin-left-xs pad-left-xs">
+  <nav class="col-3_sm-6">
+    <div class="logo">
       <a href="/">Wisamun<br />Sitthiket</a>
-    </li>
-  </ul>
-  <nav class="col-4_md-5_sm-6">
-    <div class="grid-spaceBetween nav-links">
-      <a href="/about"><p>About</p></a>
-      <a href="/news"><p>News</p></a>
-      <a href="/contact"><p>Contact</p></a>
-      <a><p><i class="fa fa-shopping-cart" aria-hidden="true"></i></p></a>
-      <a href="https://www.facebook.com/wisamunsitthiket/" target=blank><p><i class="fa fa-facebook-square" aria-hidden="true"></i></p></a>
-      <a href="https://www.instagram.com/wisamun/" target=blank><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a>
-      <a href="https://twitter.com/WisamunS" target=blank><p><i class="fa fa-twitter" aria-hidden="true"></i></p></a>
     </div>
-    <div class="nav-mobile-container">
-      <div class="toggle-mobile-menu">
-        <p><i class="fa fa-bars" aria-hidden="true"></i> Menu</p>
+  </nav>
+  <div class="nav-mobile-container">
+    <div class="toggle-mobile-menu">
+      <p><i class="fa fa-bars" aria-hidden="true"></i> Menu</p>
+    </div>
+  </div>
+  <nav class="col-4_md-5_sm-6">
+    <div class="grid-middle-spaceAround nav-links">
+      <div class="col-8 grid-spaceBetween">
+        <a href="/about">About</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div class="col-3 grid-middle-spaceAround">
+        <div class="col-3 grid-middle">
+          <div class="cart-icon-container">
+            <a href="#" class="snipcart-checkout"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <!-- items in cart -->
+              <div class="snipcart-summary summary-circle">
+              <span class="snipcart-total-items"></span>
+              </div>
+          </div>
+        </div>
+        <div class="col-8 grid-middle-spaceBetween">
+          <a href="https://www.facebook.com/wisamunsitthiket/" target=blank class=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/wisamun/" target=blank class=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/WisamunS" target=blank class=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
   </nav>
@@ -51,7 +65,7 @@
   <a href="/about"><p>About</p></a>
   <a href="/news"><p>News</p></a>
   <a href="/contact"><p>Contact</p></a>
-  <a href=""><p>Shopping Cart</p></a>
+  <a href="#" class="snipcart-checkout"><p>Shopping Cart</p></a>
   <div class="grid-center">
     <a href="https://www.facebook.com/wisamunsitthiket/" target=blank class="col-1"><p><i class="fa fa-facebook-square" aria-hidden="true"></i></p></a>
     <a href="https://www.instagram.com/wisamun/" target=blank class="col-1"><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a>
@@ -122,7 +136,12 @@
           <div class="masonry-content">
             <img src="/images/pregnant.jpg" alt="pregnant" class=""/>
             <a id="2" class="click-full-screen"><i class="fa fa-eye button-hidden" aria-hidden="true"></i></a>
-            <a class="button-hidden"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+            <a class="button-hidden snipcart-add-item" data-item-id="2"
+            data-item-name="this is an example title"
+            data-item-price="10000"
+            data-item-weight="500g"
+            data-item-url="/posts/2018-04-11-sample"
+            data-item-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
           </div>
         </a>
       </div>
@@ -136,12 +155,12 @@
               <p class="col-6_md-4_sm-12 text-white popup-description">this is an example title</p>
               <a href="/posts/2018-04-11-sample" class="col-3_md-4_sm-6"><button class="button-tiny">Details</button></a>
               <a href="" class="col-3_md-4_sm-6"><button class="button-tiny snipcart-add-item"
-        data-item-id=""
-        data-item-name="nude"
-        data-item-price=""
-        data-item-weight=""
-        data-item-url="/archives/tag/nude/"
-        data-item-description="">Add to Cart</button></a>
+        data-item-id="2"
+        data-item-name="this is an example title"
+        data-item-price="10000"
+        data-item-weight="500g"
+        data-item-url="/posts/2018-04-11-sample"
+        data-item-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">Add to Cart</button></a>
             </div>
           </div>
         </div>
@@ -162,7 +181,7 @@
     </p>
   </div>
   <div class="col-6_sm-12 pad-all-xs text-right text-center-tablet">
-    <a href=""><p >Shopping Cart</p></a>
+    <a href="#" class="snipcart-checkout"><p >Shopping Cart</p></a>
     <a href="/faq"><p >Frequently Asked Questions</p></a>
     <a href="/terms"><p >Terms & Conditions</p></a>
     <a href="/privacy"><p >Privacy Policy</p></a>

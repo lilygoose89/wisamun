@@ -173,6 +173,24 @@ a:hover {
 .nav-mobile-container {
   display: none;
 }
+.cart-icon-container {
+  position: relative;
+  top: 7px;
+}
+.summary-circle {
+  position: relative;
+  right: -8px;
+  top: -26px;
+  z-index: -1;
+  height: 15px;
+  width: 15px;
+  background: red;
+  border: solid 2px red;
+  border-radius: 100%;
+  color: white;
+  font-size: 0.6em;
+  text-align: center;
+}
 @media all and (max-width:1024px) {
   .nav-links {
     margin-right: 9%;
@@ -188,6 +206,7 @@ a:hover {
   }
   .logo {
     margin: 5% 0;
+    font-size: 2em;
   }
   .side-nav-container {
     display: none;
@@ -196,18 +215,18 @@ a:hover {
     display: block;
     font-size: 0.8em;
   }
-}
-@media all and (max-width:576px) {
-  .nav-links {
-    display: none;
-  }
-  .logo {
-    font-size: 1.5em;
-  }
   .nav-mobile-container {
     display: block;
     position: absolute;
     right: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+@media all and (max-width:576px) {
+  .logo {
+    font-size: 1.5em;
   }
 }
 /*  MOBILE MENU */
