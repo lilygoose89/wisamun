@@ -1,3 +1,6 @@
+.snip-layout {
+  background: rgba(0,0,0,0.8);
+}
 .snip-layout .snip-product__thumbnail {
   height: 160px;
   width: 150px;
@@ -73,5 +76,5 @@
   text-shadow: none;
 }
 .snip-layout .snip-loader--bar:before {
-  background-color: red;
+  background-color: #cc0000;
 }

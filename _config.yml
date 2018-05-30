@@ -2,6 +2,8 @@ collections:
   posts:
     output: true
     permalink: /:collection/:name
+  news-items:
+    output: true
 
 gems:
   - jekyll-archives

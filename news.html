@@ -1,43 +1,18 @@
 ---
 title: News and Events
-description:
-layout: default
+description: Updates and news about Wisamun Sitthiket Photography in Chiang Mai, Thailand.
+layout: page
 ---
-<!-- <section class="bg-brick">
-  {% for post in site.posts limit:1 %}
-  <div id="hero" class="hero-image" style="background-image: url('{{post.hero_image}}')">
-    <div class="bg-white-trans shadow margin-left-m margin-right-m pad-all-s text-center news-featured-post">
-      <h2>Latest News:</h2>
-      <h1>{{post.title}}</h1>
-      <h3 class="pad-top-xs pad-bottom-s">{{post.description}}</h3>
-      <h6>Published {{post.date | date: '%B %d, %Y'}}</h6>
+  {% for news-items in site.news-items reversed limit:5 %}
+  <div class="bg-white shadow pad-all-s margin-bottom-s">
+    <h2 class="text-center pad-bottom-xs">{{news-items.title}}</h2>
+    <h6 class="text-center pad-bottom-xs">Published {{news-items.date | date: '%B %d, %Y'}}</h6>
+    <div class="news-image-container">
+      <img src="{{news-items._image}}" alt="{news-items.title}} image"/>
     </div>
-  </div>
-  <div class="pad-left-m pad-right-m">
-    <div class="bg-white-trans shadow pad-all-s">
+      <h3 class="pad-top-xs pad-bottom-s">{{news-items.description}}</h3>
       <p>
-        {{post.content}}
+        {{news-items.content}}
       </p>
-    </div>
   </div>
   {% endfor %}
-  <div class="pad-top-s pad-left-m pad-right-m">
-    <h2 class="text-center text-l text_shadow pad-bottom-s">Previous News</h2> -->
-  <!-- previous posts looped by jekyll -->
-    <!-- {% for post in site.posts limit:5 offset:1 %}
-    <div id="#previous-updates" class="col_sm-12 bg-white-trans shadow margin-bottom-s-force grid">
-      <div class="col-6_sm-12 pad-none">
-        <img src="{{post.hero_image}}" class="pad-none" alt="{{post.title}} image">
-      </div>
-      <div class="col-6_sm-12 pad-all-s">
-        <h2>{{post.title}}</h2>
-        <p>{{post.description}}</p>
-        <h6 class="pad-bottom-s">Published {{post.date | date: '%B %d, %Y'}}</h6>
-        <a class="button text-m" href="{{post.url}}">Read More</a>
-      </div>
-        {{post.content}}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</section> -->

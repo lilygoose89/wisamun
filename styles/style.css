@@ -19,6 +19,9 @@ body {
 section {
   padding: 0 10%;
 }
+.page {
+  padding: 0 5% 0 3%;
+}
 /* typography ----------------------------------------- */
 h1 {
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -34,7 +37,7 @@ h2,h3,h4,h5,h6 {
 }
 p {
   font-family: 'Open Sans', sans-serif;
-  /* font-size: 0.9em; */
+  font-size: 0.9em;
 }
 ul {
   line-height: 0;
@@ -62,13 +65,16 @@ a:hover {
   color: white;
 }
 .text-red {
-  color: red;
+  color: #cc0000;
 }
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+.text-justify {
+  text-align: justify;
 }
 @media all and (max-width:768px) {
   .text-center-tablet {
@@ -184,8 +190,8 @@ a:hover {
   z-index: -1;
   height: 15px;
   width: 15px;
-  background: red;
-  border: solid 2px red;
+  background: #cc0000;
+  border: solid 2px #cc0000;
   border-radius: 100%;
   color: white;
   font-size: 0.6em;
@@ -301,7 +307,7 @@ footer a:hover {
 .wrapper {
   width: 76vw;
   position: relative;
-  top: -195px;
+  top: -185px;
   left: 14%;
   padding: 0;
 }
@@ -430,7 +436,15 @@ footer a:hover {
 
 /* about styles ---------------------------------------------------------- */
 .about-section {
-  padding: 0 3.5%;
+  padding: 0 2.5%;
+}
+.about-image {
+  height: 450px;
+  background-image: url('/images/wisamuninstudio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
 }
 .vimeo-container {
   text-align: center !important;
@@ -473,29 +487,15 @@ footer a:hover {
 } */
 
 /* news styles ----------------------------------------- */
-
-/* contact styles ----------------------------------------- */
-.bg-contact {
-  background-image: url("/images/artistatwork.jpg");
+.news-image-container {
+  height: 45vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
   overflow-y: hidden;
 }
-.bg-contact-overlay {
-  background-color: rgba(223,218,215,0.5);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 3;
-}
-.contact-form-container {
-  background-color: white;
-  padding: 5%;
-  position: relative;
-  z-index: 4;
-}
+
+/* contact styles ----------------------------------------- */
 .feedback-input {
 	color:#000;
   font-weight:300;
