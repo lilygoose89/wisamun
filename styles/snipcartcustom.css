@@ -1,0 +1,77 @@
+.snip-layout .snip-product__thumbnail {
+  height: 160px;
+  width: 150px;
+}
+.snip-layout .snip-product__description {
+  font-size: 0.9em;
+}
+.snip-layout a, .snip-layout dd, .snip-layout div, .snip-layout dl, .snip-layout dt, .snip-layout em, .snip-layout form, .snip-layout li, .snip-layout ol, .snip-layout p, .snip-layout small, .snip-layout span {
+  font-family: 'Open Sans', sans-serif;
+}
+.snip-layout h1, .snip-layout h2, .snip-layout h3 h4 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+.snip-layout label, .snip-layout .snip-form__help {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  position: relative;
+  top: -7px;
+}
+.snip-form__help:hover {
+  text-decoration: none !important;
+}
+.snip-layout input[type=password], .snip-layout input[type=text], .snip-layout select {
+  min-width: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+#snipcart_custom_Size {
+  position: relative;
+  top: -11px;
+}
+.snip-layout input[type=password], .snip-layout input[type=text], .snip-layout select:hover {
+  /* border: 1px solid black; */
+}
+.snip-layout .snip-quantity-trigger__btn:hover {
+  background-color: black;
+  color: white;
+}
+.snip-layout .snip-product__remove {
+  color: grey;
+  -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.snip-layout .snip-product__remove:hover {
+  color: black;
+}
+.snip-layout .snip-btn {
+  border: 1px solid transparent;
+  cursor:pointer;
+  background-color: #000;
+  color: white;
+  border-radius: 0;
+  -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.snip-layout .snip-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  text-shadow: none;
+}
+.snip-layout .snip-btn--highlight {
+  border: 1px solid transparent;
+	cursor:pointer;
+	background-color: #000;
+	color: white;
+  border-radius: 0;
+  -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.snip-layout .snip-btn--highlight:hover {
+  background-color: #fff;
+	color: #000;
+  border: 1px solid #000;
+  text-shadow: none;
+}
+.snip-layout .snip-loader--bar:before {
+  background-color: red;
+}
