@@ -5,6 +5,13 @@ collections:
   news-items:
     output: true
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 gems:
   - jekyll-archives
   - jekyll-seo-tag
