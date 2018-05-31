@@ -21,4 +21,14 @@ $(document).ready(function() {
       $('#mobile-menu').toggleClass('mobile-menu-visible')
   });
 
+  //click dropdown icon
+  $('#mobile-tags-drop').click(function(){
+
+      //flip the dropdown icon
+      $('#mobile-tags-drop').toggleClass('flip')
+
+      //show the tags
+      $('#mobile-tags-container').toggleClass('hide-up')
+  });
+
 });

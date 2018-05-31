@@ -16,9 +16,6 @@ body {
   margin: 0;
   padding: 0;
 }
-section {
-  padding: 0 10%;
-}
 .page {
   padding: 0 5% 0 3%;
 }
@@ -38,6 +35,7 @@ h2,h3,h4,h5,h6 {
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
+  line-height: 1.5;
 }
 ul {
   line-height: 0;
@@ -50,7 +48,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  font-family: inherit;
+  font-family: 'Alegreya Sans SC', sans-serif;
   text-transform: uppercase;
   -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -58,7 +56,6 @@ a {
 a:hover {
   text-decoration: none;
   color: white;
-  font-family: inherit;
   text-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
 }
 .text-white {
@@ -159,25 +156,20 @@ a:hover {
 }
 
 /* header and nav styles ----------------------------------------- */
+header {
+  height: 25vh;
+  background-color: #dfdad7;
+  position: relative;
+  z-index: 99;
+}
 .logo {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 900;
   font-size: 2.5em;
-  list-style-type: none;
   margin: 5%;
 }
 .nav-links {
   margin-right: 12%;
-}
-.side-nav-container {
-  width: 20vw;
-  padding-left: 3.5%;
-}
-.side-nav-container-mobile {
-  display: none;
-}
-.nav-mobile-container {
-  display: none;
 }
 .cart-icon-container {
   position: relative;
@@ -197,7 +189,26 @@ a:hover {
   font-size: 0.6em;
   text-align: center;
 }
+.side-nav-container {
+  height: 60vh;
+}
+.tags-container {
+  height: 40vh;
+  overflow-y: scroll;
+}
+.side-nav-container-mobile {
+  display: none;
+}
+.nav-mobile-container {
+  display: none;
+}
+#mobile-tags-container {
+  display: none;
+}
 @media all and (max-width:1024px) {
+  header {
+    height: 20vh;
+  }
   .nav-links {
     margin-right: 9%;
   }
@@ -207,6 +218,9 @@ a:hover {
   }
 }
 @media all and (max-width:768px) {
+  header {
+    height: 15vh;
+  }
   .nav-links {
     margin-right: 7.5%;
   }
@@ -220,6 +234,9 @@ a:hover {
   .side-nav-container-mobile {
     display: block;
     font-size: 0.8em;
+    background-color: #dfdad7;
+    position: relative;
+    z-index: 99;
   }
   .nav-mobile-container {
     display: block;
@@ -228,6 +245,12 @@ a:hover {
   }
   .nav-links {
     display: none;
+  }
+  #mobile-tags-container {
+    display: block;
+    -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+    font-size: 0.8em;
   }
 }
 @media all and (max-width:576px) {
@@ -288,6 +311,17 @@ a .active-label:hover {
   -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
 }
+.hide-up {
+  transform: translateY(-550px);
+  position: absolute;
+  -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.flip {
+  transform: rotate(180deg);
+  -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+}
 
 /* footer styles ----------------------------------------- */
 footer {
@@ -305,11 +339,10 @@ footer a:hover {
 
 /* homepage and post-list styles ----------------------------------------- */
 .wrapper {
-  width: 76vw;
+  width: 70vw;
+  min-height: 75vh;
   position: relative;
-  top: -185px;
-  left: 14%;
-  padding: 0;
+  left: -11px;
 }
 /* masonry styles */
 .masonry-layout {
@@ -334,13 +367,15 @@ footer a:hover {
   transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 @media all and (max-width:1024px) {
-  .wrapper {
+  /* .wrapper {
     top: -170px;
-  }
+  } */
 }
 @media all and (max-width:768px) {
   .wrapper {
-    position: static;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
   }
   .masonry-layout {
     column-count: 2;
@@ -436,7 +471,7 @@ footer a:hover {
 
 /* about styles ---------------------------------------------------------- */
 .about-section {
-  padding: 0 2.5%;
+  height: 72vh;
 }
 .about-image {
   height: 450px;
@@ -686,15 +721,6 @@ input:focus, textarea:focus {
 .margin-left-l {
   margin-left: 20%
 }
-/* .add-object-fit {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.height-50
-{
-  height: 50px;
-} */
 /* POSITION */
 .position-rel {
   position: relative;

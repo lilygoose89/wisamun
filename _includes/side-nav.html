@@ -1,23 +1,30 @@
 <div class="side-nav-container">
+  <h3 class="pad-bottom-m">The photography and artworks of Thailand's most renowned avant-garde photographer.</h3>
   <h2 class="pad-bottom-s">Explore tags & collections</h2>
-  <nav>
+  <nav class="tags-container">
     {% for tag in site.tags %}
       {% assign tag_name = tag[0] %}
       <a href="/archives/tag/{{ tag_name | slugify }}/"><p class="{% if page.url contains 'tag_name' %}active-label{% else %}black-label{% endif %}" >{{ tag_name }}</p></a>
     {% endfor %}
-    <div class="margin-top-m">
-      <a href="/">Display All Images</a>
-    </div>
   </nav>
+  <div class="margin-top-m">
+    <a href="/">Display All Images</a>
+  </div>
 </div>
 <!-- mobile side-nav -->
-<div class="side-nav-container-mobile pad-left-s pad-right-s pad-bottom-xs">
-  <h2 class="pad-bottom-xs">Explore tags & collections</h2>
-  <nav>
-    {% for tag in site.tags %}
-      {% assign tag_name = tag[0] %}
-      <a href="/archives/tag/{{ tag_name | slugify }}/"><p class="{% if page.url contains 'tag_name' %}active-label{% else %}black-label{% endif %}" >{{ tag_name }}</p></a>
-    {% endfor %}
-    <a class="black-label" href="/">display all images</a>
-  </nav>
+<div class="side-nav-container-mobile">
+  <h3 class="pad-bottom-s">The photography and artworks of Thailand's most renowned avant-garde photographer.</h3>
+  <div class="grid-spaceBetween">
+      <h2 class="col-5_sm-8">Explore tags & collections</h2>
+      <div class="col-1">
+        <i id="mobile-tags-drop" class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+  </div>
 </div>
+<nav id="mobile-tags-container" class="hide-up">
+  {% for tag in site.tags %}
+    {% assign tag_name = tag[0] %}
+    <a href="/archives/tag/{{ tag_name | slugify }}/"><p class="{% if page.url contains 'tag_name' %}active-label{% else %}black-label{% endif %}" >{{ tag_name }}</p></a>
+  {% endfor %}
+  <a href="/"><p class="black-label">display all images</p></a>
+</nav>
