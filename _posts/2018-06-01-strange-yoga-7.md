@@ -2,7 +2,7 @@
 title: strange yoga number 7
 description: >-
   Twisted and contorted, society demands we adjust our shape to fit its image. This is the Strange Yoga collection by Wisamun Sitthiket.
-_image: /images/artworks/strange-yoga/strange-yoga-number-7.jpg
+image: /images/artworks/strange-yoga/strange-yoga-number-7.jpg
 photoid: 47
 author: Wisamun Sitthiket
 tags:

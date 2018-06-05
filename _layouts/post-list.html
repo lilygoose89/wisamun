@@ -8,7 +8,7 @@ layout: home
       <div class="masonry-container">
         <a href="{{post.url}}">
           <div class="masonry-content">
-            <img src="{{post._image}}" alt="wisamun sitthiket - photography artwork - {{post.tags}}" class=""/>
+            <img src="{{post.image}}" alt="wisamun sitthiket - photography artwork - {{post.tags}}" class=""/>
             <a id="{{post.photoid}}" class="click-full-screen"><i class="fa fa-eye button-hidden" aria-hidden="true"></i></a>
             <a class="button-hidden snipcart-add-item" data-item-id="{{post.photoid}}"
             data-item-name="{{post.title}}"
@@ -16,7 +16,7 @@ layout: home
             data-item-weight="50g"
             data-item-url="{{post.url}}"
             data-item-description="{{post.description}}"
-            data-item-image="{{post._image}}"
+            data-item-image="{{post.image}}"
             data-item-custom1-name="Size"
             data-item-custom1-options="1x1|2x2[+5000]"
             data-item-custom1-value="1x1"
@@ -28,7 +28,7 @@ layout: home
       <div id="{{post.photoid}}Modal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <img src="{{post._image}}" alt="wisamun sitthiket - photography artwork - {{post.tags}}" class="full-screen-image"/>
+          <img src="{{post.image}}" alt="wisamun sitthiket - photography artwork - {{post.tags}}" class="full-screen-image"/>
           <div class="grid-center">
             <div class="col-6_md-10 grid-middle-center-spaceAround full-screen-info">
               <h5 class="col-6_md-4_sm-12 text-white popup-description">{{post.title}}</h5>
@@ -40,7 +40,7 @@ layout: home
         data-item-weight="50g"
         data-item-url="{{post.url}}"
         data-item-description="{{post.description}}"
-        data-item-image="{{post._image}}"
+        data-item-image="{{post.image}}"
         data-item-custom1-name="Size"
         data-item-custom1-options="1x1|2x2[+5000]"
         data-item-custom1-value="1x1"

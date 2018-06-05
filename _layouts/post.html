@@ -1,7 +1,7 @@
 ---
 title: this is an example title
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-_image:
+image:
 alt:
 photoid:
 date:
@@ -18,7 +18,7 @@ _hide_content: true
       <div class="col-6_md-12">
         <div class="bg-white text-center shadow">
           <a id="{{page.photoid}}" class="click-full-screen">
-            <img src="{{page._image}}" alt="wisamun sitthiket - photography artwork - {{page.tags}}"/>
+            <img src="{{page.image}}" alt="wisamun sitthiket - photography artwork - {{page.tags}}"/>
           </a>
         </div>
       </div>
@@ -36,7 +36,7 @@ _hide_content: true
     data-item-weight="50g"
     data-item-url="{{page.url}}"
     data-item-description="{{page.description}}"
-    data-item-image="{{page._image}}"
+    data-item-image="{{page.image}}"
     data-item-custom1-name="Size"
     data-item-custom1-options="1x1|2x2[+5000]"
     data-item-custom1-value="1x1"
@@ -50,7 +50,7 @@ _hide_content: true
 <div id="{{page.photoid}}Modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="{{page._image}}" alt="wisamun sitthiket - photography artwork - {{page.tags}}" class="full-screen-image"/>
+    <img src="{{page.image}}" alt="wisamun sitthiket - photography artwork - {{page.tags}}" class="full-screen-image"/>
     <div class="grid-center">
       <div class="col-6 grid-middle-center-spaceAround full-screen-info">
         <h5 class="col-12 text-white pad-top-xs">{{page.title}}</h5>

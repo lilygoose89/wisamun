@@ -4,7 +4,7 @@ description: >-
   The Midnight Ballerina series features a poised dancer. Dark and elegant, this
   black & white series plays with light and shadow, showcasing Wisamun
   Sitthiket's eye for shape and composition.
-_image: /images/artworks/midnight-ballerina/midnight-ballerina-number-2.jpg
+image: /images/artworks/midnight-ballerina/midnight-ballerina-number-2.jpg
 photoid: 12
 author: Wisamun Sitthiket
 tags:
