@@ -1,11 +1,10 @@
 ---
 title: ballerina number 4
 description: >-
-  The ballerina series features a poised dancer. Dark and elegant, this
+  The Ballerina series features a poised dancer. Dark and elegant, this
   black & white series plays with light and shadow, showcasing Wisamun
   Sitthiket's eye for shape and composition.
 _image: /images/artworks/ballerina/ballerina-number-4.jpg
-alt: black and white image of a ballerina in a black leotard
 photoid: 4
 author: Wisamun Sitthiket
 tags:

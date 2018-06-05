@@ -18,11 +18,11 @@ _hide_content: true
       <div class="col-6_md-12">
         <div class="bg-white text-center shadow">
           <a id="{{page.photoid}}" class="click-full-screen">
-            <img class="pad-top-xs" src="{{page._image}}" alt="{{page.alt}}"/>
+            <img src="{{page._image}}" alt="wisamun sitthiket - photography artwork - {{page.tags}}"/>
           </a>
         </div>
       </div>
-      <div class="col-5_md-12 pad-bottom-m">
+      <div class="col-5_md-12">
         <h1>{{page.title}}</h1>
         <p>{{page.description}}</p>
         <!-- <p>Uploaded on {{page.date | date: "%b %-d, %Y"}}</p> -->
@@ -50,10 +50,10 @@ _hide_content: true
 <div id="{{page.photoid}}Modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="{{page._image}}" alt="{{page.alt}}" class="full-screen-image"/>
+    <img src="{{page._image}}" alt="wisamun sitthiket - photography artwork - {{page.tags}}" class="full-screen-image"/>
     <div class="grid-center">
       <div class="col-6 grid-middle-center-spaceAround full-screen-info">
-        <p class="col-12 text-white">{{page.title}}</p>
+        <h5 class="col-12 text-white pad-top-xs">{{page.title}}</h5>
       </div>
     </div>
   </div>

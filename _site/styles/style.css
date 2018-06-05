@@ -164,7 +164,7 @@ a:hover {
   background-color: white;
 }
 .shadow {
-  box-shadow: none 4px 18px rgba(0,0,0,0.25), none 4px 4px rgba(0,0,0,0.22);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
 }
 
 /* header and nav styles ----------------------------------------- */
