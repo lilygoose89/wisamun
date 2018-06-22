@@ -560,13 +560,7 @@ footer a:hover {
 } */
 
 /* news styles ----------------------------------------- */
-.news-image-container {
-  height: 45vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow-y: hidden;
-}
+
 
 /* contact styles ----------------------------------------- */
 .feedback-input {

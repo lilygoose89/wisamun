@@ -7,12 +7,10 @@ layout: page
   <div class="bg-white shadow pad-all-s margin-bottom-s">
     <h2 class="text-center pad-bottom-xs">{{news-items.title}}</h2>
     <h6 class="text-center pad-bottom-xs">Published {{news-items.date | date: '%B %d, %Y'}}</h6>
-    <div class="news-image-container">
-      <img src="{{news-items._image}}" alt="{news-items.title}} image"/>
-    </div>
-      <h3 class="pad-top-xs pad-bottom-s">{{news-items.description}}</h3>
+    <img src="{{news-items.image}}" alt="{{news-items.title}} image"/>
       <p>
         {{news-items.content}}
       </p>
   </div>
   {% endfor %}
+  <a href="/"><button class="button-main margin-top-xs margin-bottom-s">Go back to view artworks</button></a>
