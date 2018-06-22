@@ -76,6 +76,9 @@ a:hover {
 .text-justify {
   text-align: justify;
 }
+.text-big {
+  font-size: 1.2em;
+}
 @media all and (max-width:768px) {
   .text-center-tablet {
     text-align: center;
